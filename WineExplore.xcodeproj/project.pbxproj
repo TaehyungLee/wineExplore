@@ -20,6 +20,7 @@
 		C129BAE7281FA87600151124 /* WineDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129BAE6281FA87600151124 /* WineDataCell.swift */; };
 		C129BAE9281FA90D00151124 /* WineDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129BAE8281FA90D00151124 /* WineDataModel.swift */; };
 		C129BAEB281FB8E100151124 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C129BAEA281FB8E100151124 /* GoogleService-Info.plist */; };
+		C13549FC282113D50025C586 /* WineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13549FB282113D50025C586 /* WineDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C129BAE6281FA87600151124 /* WineDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineDataCell.swift; sourceTree = "<group>"; };
 		C129BAE8281FA90D00151124 /* WineDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineDataModel.swift; sourceTree = "<group>"; };
 		C129BAEA281FB8E100151124 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C13549FB282113D50025C586 /* WineDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineDetailViewController.swift; sourceTree = "<group>"; };
 		D9DC010C573A3AF87F28D177 /* Pods-WineExplore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WineExplore.debug.xcconfig"; path = "Target Support Files/Pods-WineExplore/Pods-WineExplore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +134,7 @@
 				C129BAB4281FA26200151124 /* AppDelegate.swift */,
 				C129BAB6281FA26200151124 /* SceneDelegate.swift */,
 				C129BAB8281FA26200151124 /* ViewController.swift */,
+				C13549FB282113D50025C586 /* WineDetailViewController.swift */,
 				C129BAE8281FA90D00151124 /* WineDataModel.swift */,
 				C129BAE6281FA87600151124 /* WineDataCell.swift */,
 				C129BABA281FA26200151124 /* Main.storyboard */,
@@ -336,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13549FC282113D50025C586 /* WineDetailViewController.swift in Sources */,
 				C129BAE9281FA90D00151124 /* WineDataModel.swift in Sources */,
 				C129BAB9281FA26200151124 /* ViewController.swift in Sources */,
 				C129BAB5281FA26200151124 /* AppDelegate.swift in Sources */,
@@ -527,7 +531,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,7 +562,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

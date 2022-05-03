@@ -7,10 +7,18 @@
 
 import UIKit
 
-struct WineDataModel {
-    var name = ""
-    var serial_no = ""
-    var imageUrlStr = ""
-    var price = 0
-    var content = ""
+struct WineListModel:Codable {
+    var idNum = 0
+    var wineData:WineDataModel = WineDataModel()
+}
+
+struct WineDataModel:Codable {
+    var no = 0
+    var koreanName:String = ""
+    var originName:String? = ""
+    var country:String? = ""
+    var region1:String? = ""
+    var region2:String? = ""
+    var price:Int? = 0
+    
 }
