@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WineExplore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dZW-bu-hUx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WineDataCell" id="ZNX-Do-Rt8" customClass="WineDataCell" customModule="WineExplore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="41"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZNX-Do-Rt8" id="6ZC-19-JJw">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ush-JJ-e5K">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1f-py-70p">
+                                                            <rect key="frame" x="15" y="10" width="384" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="x1f-py-70p" firstAttribute="top" secondItem="Ush-JJ-e5K" secondAttribute="top" constant="10" id="ave-eU-xAU"/>
+                                                        <constraint firstAttribute="trailing" secondItem="x1f-py-70p" secondAttribute="trailing" constant="15" id="eUG-sa-gu9"/>
+                                                        <constraint firstItem="x1f-py-70p" firstAttribute="leading" secondItem="Ush-JJ-e5K" secondAttribute="leading" constant="15" id="gGw-nc-ZRs"/>
+                                                        <constraint firstAttribute="bottom" secondItem="x1f-py-70p" secondAttribute="bottom" constant="10" id="tp4-Nr-P2K"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Ush-JJ-e5K" secondAttribute="trailing" id="Ctd-Xb-aLy"/>
+                                                <constraint firstItem="Ush-JJ-e5K" firstAttribute="top" secondItem="6ZC-19-JJw" secondAttribute="top" id="SwR-wX-Ohi"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ush-JJ-e5K" secondAttribute="bottom" id="iR5-Uk-1Ws"/>
+                                                <constraint firstItem="Ush-JJ-e5K" firstAttribute="leading" secondItem="6ZC-19-JJw" secondAttribute="leading" id="v1M-cs-xTS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="x1f-py-70p" id="hJe-ap-9Fe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="QUO-ak-asm"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wag-qn-0yg"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dZW-bu-hUx" secondAttribute="trailing" id="C28-gd-Vej"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dZW-bu-hUx" secondAttribute="bottom" id="cvE-YS-bOw"/>
+                            <constraint firstItem="dZW-bu-hUx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fXZ-2Q-GjK"/>
+                            <constraint firstItem="dZW-bu-hUx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wte-ze-yJF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="wineListTableView" destination="dZW-bu-hUx" id="xZj-xO-t3r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
