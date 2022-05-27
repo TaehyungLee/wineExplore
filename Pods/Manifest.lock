@@ -95,17 +95,28 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (2.1.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
   - SDWebImage (5.12.5):
     - SDWebImage/Core (= 5.12.5)
   - SDWebImage/Core (5.12.5)
+  - SPIndicator (1.6.4)
+  - TAKUUID (1.5.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.2)
   - Firebase
   - Firebase/Database
+  - RxCocoa
+  - RxRelay
   - RxSwift
   - SDWebImage (~> 5.0)
+  - SPIndicator
+  - TAKUUID
 
 SPEC REPOS:
   trunk:
@@ -122,8 +133,12 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - RxCocoa
+    - RxRelay
     - RxSwift
     - SDWebImage
+    - SPIndicator
+    - TAKUUID
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
@@ -139,9 +154,13 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+  SPIndicator: 93e0a4fb23de51294ac48e874c0f081a5e293e4f
+  TAKUUID: 48d7c690d85a27e7beb79b099349f1cf0d60c928
 
-PODFILE CHECKSUM: 09c7ea237c0b0822ca0ca495dc9c38976f498a40
+PODFILE CHECKSUM: fa917aa170e0d67edf214b19457cd52ea79428e1
 
 COCOAPODS: 1.11.3

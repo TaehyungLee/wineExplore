@@ -7,11 +7,6 @@
 
 import UIKit
 
-struct WineListModel:Codable {
-    var idNum = 0
-    var wineData:WineDataModel = WineDataModel()
-}
-
 struct WineDataModel:Codable {
     var no = 0
     var koreanName:String = ""

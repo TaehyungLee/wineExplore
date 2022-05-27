@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SPIndicator
 
 class WineDetailViewController: UIViewController {
 
@@ -20,14 +21,8 @@ class WineDetailViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func onSendBtn(_ sender:UIButton?) {
+        SPIndicator.present(title: "Complete", message: "Done", preset: .done)
     }
-    */
 
 }

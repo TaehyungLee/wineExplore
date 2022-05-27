@@ -10,5 +10,9 @@ target 'WineExplore' do
   pod 'Firebase/Database'
   pod 'Alamofire', '~> 5.2'
   pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxRelay'
   pod 'SDWebImage', '~> 5.0'
+  pod 'SPIndicator'
+  pod 'TAKUUID'
 end

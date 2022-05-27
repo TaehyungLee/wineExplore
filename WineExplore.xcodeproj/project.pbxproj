@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		354F69FCCBBF0B7FB07A2649 /* Pods_WineExplore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1DD09122D36CA74D283786 /* Pods_WineExplore.framework */; };
+		C124BB132822203300930D9A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124BB122822203300930D9A /* User.swift */; };
+		C124BB15282248B300930D9A /* UTIL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124BB14282248B300930D9A /* UTIL.swift */; };
+		C127C14F28324FB100863207 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127C14E28324FB100863207 /* ViewModel.swift */; };
+		C127C151283250B800863207 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127C150283250B800863207 /* APIService.swift */; };
 		C129BAB5281FA26200151124 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129BAB4281FA26200151124 /* AppDelegate.swift */; };
 		C129BAB7281FA26200151124 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129BAB6281FA26200151124 /* SceneDelegate.swift */; };
 		C129BAB9281FA26200151124 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129BAB8281FA26200151124 /* ViewController.swift */; };
@@ -21,6 +25,7 @@
 		C129BAE9281FA90D00151124 /* WineDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129BAE8281FA90D00151124 /* WineDataModel.swift */; };
 		C129BAEB281FB8E100151124 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C129BAEA281FB8E100151124 /* GoogleService-Info.plist */; };
 		C13549FC282113D50025C586 /* WineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13549FB282113D50025C586 /* WineDetailViewController.swift */; };
+		C1A5226D283B6C8E00E19920 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5226C283B6C8E00E19920 /* UIView+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,10 @@
 /* Begin PBXFileReference section */
 		2804E18B352BA62B726CF135 /* Pods-WineExplore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WineExplore.release.xcconfig"; path = "Target Support Files/Pods-WineExplore/Pods-WineExplore.release.xcconfig"; sourceTree = "<group>"; };
 		6B1DD09122D36CA74D283786 /* Pods_WineExplore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WineExplore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C124BB122822203300930D9A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C124BB14282248B300930D9A /* UTIL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTIL.swift; sourceTree = "<group>"; };
+		C127C14E28324FB100863207 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C127C150283250B800863207 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		C129BAB1281FA26200151124 /* WineExplore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WineExplore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C129BAB4281FA26200151124 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C129BAB6281FA26200151124 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +69,7 @@
 		C129BAE8281FA90D00151124 /* WineDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineDataModel.swift; sourceTree = "<group>"; };
 		C129BAEA281FB8E100151124 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C13549FB282113D50025C586 /* WineDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineDetailViewController.swift; sourceTree = "<group>"; };
+		C1A5226C283B6C8E00E19920 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		D9DC010C573A3AF87F28D177 /* Pods-WineExplore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WineExplore.debug.xcconfig"; path = "Target Support Files/Pods-WineExplore/Pods-WineExplore.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +146,12 @@
 				C129BAB8281FA26200151124 /* ViewController.swift */,
 				C13549FB282113D50025C586 /* WineDetailViewController.swift */,
 				C129BAE8281FA90D00151124 /* WineDataModel.swift */,
+				C127C14E28324FB100863207 /* ViewModel.swift */,
+				C127C150283250B800863207 /* APIService.swift */,
+				C124BB122822203300930D9A /* User.swift */,
+				C124BB14282248B300930D9A /* UTIL.swift */,
 				C129BAE6281FA87600151124 /* WineDataCell.swift */,
+				C1A5226C283B6C8E00E19920 /* UIView+extension.swift */,
 				C129BABA281FA26200151124 /* Main.storyboard */,
 				C129BABD281FA26400151124 /* Assets.xcassets */,
 				C129BABF281FA26400151124 /* LaunchScreen.storyboard */,
@@ -340,11 +355,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C13549FC282113D50025C586 /* WineDetailViewController.swift in Sources */,
+				C127C14F28324FB100863207 /* ViewModel.swift in Sources */,
 				C129BAE9281FA90D00151124 /* WineDataModel.swift in Sources */,
 				C129BAB9281FA26200151124 /* ViewController.swift in Sources */,
+				C124BB15282248B300930D9A /* UTIL.swift in Sources */,
 				C129BAB5281FA26200151124 /* AppDelegate.swift in Sources */,
 				C129BAE7281FA87600151124 /* WineDataCell.swift in Sources */,
+				C127C151283250B800863207 /* APIService.swift in Sources */,
 				C129BAB7281FA26200151124 /* SceneDelegate.swift in Sources */,
+				C124BB132822203300930D9A /* User.swift in Sources */,
+				C1A5226D283B6C8E00E19920 /* UIView+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
