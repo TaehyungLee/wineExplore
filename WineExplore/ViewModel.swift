@@ -12,21 +12,25 @@ class ViewModel {
     
     // 초기값을 가지는 subject
     var wineObservable = BehaviorSubject<[WineDataModel]>(value: [])
+    var disposeBag = DisposeBag()
     
     init() {
-
-        _ = APIService.rxFetchAll()
-            .subscribe { event in
-                switch event {
-                case .next(let wineList):
-                    self.wineObservable.onNext(wineList)
-                    break
-                case .completed:
-                    break
-                case .error:
-                    break
-                }
-            }
         
+        APIService.shared.rxReadWine()
+            .subscribe(onNext: { wines in
+                self.wineObservable.onNext(wines)
+            }, onError: { err in
+                print("read wine error : \(err.localizedDescription)")
+            }).disposed(by: disposeBag)
+        
+    }
+    
+    func searchWine(searchStr:String) {
+        APIService.shared.rxReadSearchWine(searchStr: searchStr)
+            .subscribe(onNext:{ wines in
+                self.wineObservable.onNext(wines)
+            }, onError: { err in
+                print("read wine error : \(err.localizedDescription)")
+            }).disposed(by: disposeBag)
     }
 }

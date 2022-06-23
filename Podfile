@@ -8,6 +8,7 @@ target 'WineExplore' do
   # Pods for WineExplore
   pod 'Firebase'
   pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
   pod 'Alamofire', '~> 5.2'
   pod 'RxSwift'
   pod 'RxCocoa'

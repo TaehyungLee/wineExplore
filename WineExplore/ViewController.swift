@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var wineListTableView:UITableView!
     
     @IBOutlet weak var filterLabel:UILabel!
+    @IBOutlet weak var searchBar:UISearchBar!
     
     var wineList:[WineDataModel] = []
     var myInfo:User = User()
@@ -26,6 +27,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        searchBar.delegate = self
+        
         // 개인 고유의 번호 필요
         self.myInfo = User(nickName: "", unique_id: UTIL.getUUID())
         
@@ -35,18 +38,7 @@ class ViewController: UIViewController {
                 cell.nameLabel.text = item.koreanName
             }
             .disposed(by: disposeBag)
-        
-        
-        APIService.rxSearchDataFetch("16")
-            .subscribe(onNext: {
-                print("search test------")
-                print($0)
-            }, onError: {
-                print("search error------")
-                print($0.localizedDescription)
-            }).disposed(by: disposeBag)
-            
-        
+
         wineListTableView.rx.itemSelected
             .subscribe { [weak self] index in
                 let vc =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WineDetailViewController") as! WineDetailViewController
@@ -54,6 +46,9 @@ class ViewController: UIViewController {
             }.disposed(by: disposeBag)
 
     }
+    
+    
+    
     
 //    // 와인 데이터 저장하기
 //    func saveWineData(_ data:WineDataModel) {
@@ -132,3 +127,11 @@ class ViewController: UIViewController {
     
 }
 
+extension ViewController:UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("searchBarSearchButtonClicked")
+        
+        viewModel.searchWine(searchStr: searchBar.text ?? "")
+        
+    }
+}

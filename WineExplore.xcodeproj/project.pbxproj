@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		354F69FCCBBF0B7FB07A2649 /* Pods_WineExplore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1DD09122D36CA74D283786 /* Pods_WineExplore.framework */; };
+		4F7830F42863F8AF00AF2CC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F7830F32863F8AF00AF2CC7 /* GoogleService-Info.plist */; };
+		4F7830F62864007900AF2CC7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7830F52864007900AF2CC7 /* Restaurant.swift */; };
+		4F7830F828640BA400AF2CC7 /* LocalCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7830F728640BA400AF2CC7 /* LocalCollection.swift */; };
 		C124BB132822203300930D9A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124BB122822203300930D9A /* User.swift */; };
 		C124BB15282248B300930D9A /* UTIL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124BB14282248B300930D9A /* UTIL.swift */; };
 		C127C14F28324FB100863207 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C127C14E28324FB100863207 /* ViewModel.swift */; };
@@ -23,7 +26,6 @@
 		C129BAD8281FA26400151124 /* WineExploreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129BAD7281FA26400151124 /* WineExploreUITestsLaunchTests.swift */; };
 		C129BAE7281FA87600151124 /* WineDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129BAE6281FA87600151124 /* WineDataCell.swift */; };
 		C129BAE9281FA90D00151124 /* WineDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129BAE8281FA90D00151124 /* WineDataModel.swift */; };
-		C129BAEB281FB8E100151124 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C129BAEA281FB8E100151124 /* GoogleService-Info.plist */; };
 		C13549FC282113D50025C586 /* WineDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13549FB282113D50025C586 /* WineDetailViewController.swift */; };
 		C1A5226D283B6C8E00E19920 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A5226C283B6C8E00E19920 /* UIView+extension.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		2804E18B352BA62B726CF135 /* Pods-WineExplore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WineExplore.release.xcconfig"; path = "Target Support Files/Pods-WineExplore/Pods-WineExplore.release.xcconfig"; sourceTree = "<group>"; };
+		4F7830F32863F8AF00AF2CC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4F7830F52864007900AF2CC7 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		4F7830F728640BA400AF2CC7 /* LocalCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCollection.swift; sourceTree = "<group>"; };
 		6B1DD09122D36CA74D283786 /* Pods_WineExplore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WineExplore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C124BB122822203300930D9A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C124BB14282248B300930D9A /* UTIL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTIL.swift; sourceTree = "<group>"; };
@@ -67,7 +72,6 @@
 		C129BAD7281FA26400151124 /* WineExploreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineExploreUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C129BAE6281FA87600151124 /* WineDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineDataCell.swift; sourceTree = "<group>"; };
 		C129BAE8281FA90D00151124 /* WineDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineDataModel.swift; sourceTree = "<group>"; };
-		C129BAEA281FB8E100151124 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C13549FB282113D50025C586 /* WineDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineDetailViewController.swift; sourceTree = "<group>"; };
 		C1A5226C283B6C8E00E19920 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
 		D9DC010C573A3AF87F28D177 /* Pods-WineExplore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WineExplore.debug.xcconfig"; path = "Target Support Files/Pods-WineExplore/Pods-WineExplore.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 				C129BAE8281FA90D00151124 /* WineDataModel.swift */,
 				C127C14E28324FB100863207 /* ViewModel.swift */,
 				C127C150283250B800863207 /* APIService.swift */,
+				4F7830F728640BA400AF2CC7 /* LocalCollection.swift */,
+				4F7830F52864007900AF2CC7 /* Restaurant.swift */,
 				C124BB122822203300930D9A /* User.swift */,
 				C124BB14282248B300930D9A /* UTIL.swift */,
 				C129BAE6281FA87600151124 /* WineDataCell.swift */,
@@ -155,8 +161,8 @@
 				C129BABA281FA26200151124 /* Main.storyboard */,
 				C129BABD281FA26400151124 /* Assets.xcassets */,
 				C129BABF281FA26400151124 /* LaunchScreen.storyboard */,
-				C129BAEA281FB8E100151124 /* GoogleService-Info.plist */,
 				C129BAC2281FA26400151124 /* Info.plist */,
+				4F7830F32863F8AF00AF2CC7 /* GoogleService-Info.plist */,
 			);
 			path = WineExplore;
 			sourceTree = "<group>";
@@ -285,7 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C129BAC1281FA26400151124 /* LaunchScreen.storyboard in Resources */,
-				C129BAEB281FB8E100151124 /* GoogleService-Info.plist in Resources */,
+				4F7830F42863F8AF00AF2CC7 /* GoogleService-Info.plist in Resources */,
 				C129BABE281FA26400151124 /* Assets.xcassets in Resources */,
 				C129BABC281FA26200151124 /* Main.storyboard in Resources */,
 			);
@@ -356,10 +362,12 @@
 			files = (
 				C13549FC282113D50025C586 /* WineDetailViewController.swift in Sources */,
 				C127C14F28324FB100863207 /* ViewModel.swift in Sources */,
+				4F7830F828640BA400AF2CC7 /* LocalCollection.swift in Sources */,
 				C129BAE9281FA90D00151124 /* WineDataModel.swift in Sources */,
 				C129BAB9281FA26200151124 /* ViewController.swift in Sources */,
 				C124BB15282248B300930D9A /* UTIL.swift in Sources */,
 				C129BAB5281FA26200151124 /* AppDelegate.swift in Sources */,
+				4F7830F62864007900AF2CC7 /* Restaurant.swift in Sources */,
 				C129BAE7281FA87600151124 /* WineDataCell.swift in Sources */,
 				C127C151283250B800863207 /* APIService.swift in Sources */,
 				C129BAB7281FA26200151124 /* SceneDelegate.swift in Sources */,
@@ -557,7 +565,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thlee.WineExplore.WineExplore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thlee.WineExplore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -588,7 +596,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thlee.WineExplore.WineExplore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thlee.WineExplore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
